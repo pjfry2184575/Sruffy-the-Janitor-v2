@@ -1,0 +1,22 @@
+$nomention
+<@&1087636516387430400>
+$onlyForChannels[1087641799536947250;Your are in the wrong channel please head to <#1087641799536947250>.]
+
+
+$setVar[WID;$userID[$username#$discriminator]]
+$setVar[Wnickname;$nickname]
+$setVar[Wamount;$message]
+
+$title[Withdraw Request]
+$description[**$nickname** would like to withdraw $__**$message**__.]
+
+
+$addButton[no;BankerStart;Start Withdraw;primary;no;]
+$endif
+
+
+$footer[provided by PlanEx]
+$thumbnail[https://gyazo.com/abc019ead3c72be5607196ed8fe0f07b.png]
+$color[1b7e1b]
+$deletecommand
+$addTimestamp
