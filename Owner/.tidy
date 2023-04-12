@@ -1,0 +1,12 @@
+$nomention
+
+$onlyAdmin[> I do apologize, but unfortunately Fry is the only one able to use this command.]
+
+$clear[$message]
+$argsCheck[>1;Usage !tidy <amount>]
+
+$title[$username]
+$description[Successfully cleaned up $message Messages !]
+$deleteIn[5]
+$suppressErrors[We Have Problem Purging The Message uh anti purge forces stopped us]
+$deletecommand
