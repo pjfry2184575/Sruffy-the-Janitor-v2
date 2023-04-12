@@ -1,0 +1,6 @@
+{
+    "BDFD.experiments.autoCompletions": true,
+    "BDFD.experiments.sync": true,
+    "editor.tabSize": 2,
+    "editor.autoClosingBrackets": "always"
+}
