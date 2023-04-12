@@ -1,0 +1,11 @@
+$nomention
+$onlyIf[$charCount[$message]<=3;The prefix should be less or equals to 3]
+
+$onlyForIDs[459644548541448212;> I do apologize, but unfortunately Fry is the only one able to use this command.]
+
+Successfully set the prefix to ` $message `
+
+$setServerVar[prefix;$message]
+
+$varExistError[prefix;Please add a variable called **prefix**]
+$deletecommand
