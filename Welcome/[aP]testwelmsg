@@ -1,0 +1,19 @@
+$onlyAdmin[> I do apologize, but unfortunately Fry is the only one able to use this command.]
+
+
+$nomention
+<@$authorID>
+$title[Welcome to PlanEx]
+$description[$eval[$unescape[$getServerVar[welcomemsg]]]
+]
+
+$thumbnail[$getServerVar[welthumbnail]]
+$color[$getServerVar[welcolor]]
+$footer[$getServerVar[footmsg]]
+
+$image[https://api.xzusfin.repl.co/card?avatar=$replaceText[$authorAvatar;.
+webp;.png;1]?size=2048&middle=Welcome&name=$replaceText[$replaceText[$username[$authorID]#$discriminator[$authorID];#;%23;-1]; ;%20;-1]&bottom=$replaceText[We are now $membersCount Members strong; ;%20;-1]&background=https://gyazo.com/a66786242d31a1d59b5fecc9a957bde1.jpg&text=%23ef7213&avatarborder=%23ffffff&avatarbg=%23FF28b3]
+
+$addTimestamp
+$author[$username#$discriminator[]]
+$authorIcon[$authorAvatar]

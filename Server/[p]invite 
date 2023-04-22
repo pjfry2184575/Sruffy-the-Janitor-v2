@@ -1,0 +1,10 @@
+$nomention
+$title[Server Invite]
+$description[https://bit.ly/PlanEx-Faction-Server]
+
+$thumbnail[$getServerVar[8-bit_ship]]
+$footer[$getServerVar[footer]]
+$color[$getServerVar[color]]
+$addTimestamp
+$author[$nickname]
+$authorIcon[$authorAvatar]
