@@ -1,0 +1,6 @@
+$nomention
+$color[ef7213]
+$image[https://vacefron.nl/api/rankcard?username=$replaceText[$username[$mentioned[1;yes]]; ;+;-1]&avatar=$userAvatar[$mentioned[1;yes]]?size=4096&level=$getUserVar[level;$mentioned[1;yes]]&rank=&currentxp=$getUserVar[talk;$mentioned[1;yes]]&nextlevelxp=$getUserVar[req;$mentioned[1;yes]]&previouslevelxp=0&custombg=https://static0.srcdn.com/wordpress/wp-content/uploads/2020/12/Futurama-Planet-Express-Building-Feature.jpeg?q=50&fit=crop&w=960&h=500&dpr=1.5=false]
+$footer[$username[$mentioned[1;yes]] needs $replaceText[$sub[$sum[$getUserVar[req;$mentioned[1;yes]];1];$getUserVar[talk;$mentioned[1;yes]]];-; ;1] more EXP to level up]
+
+$deletecommand

@@ -1,0 +1,25 @@
+$dm
+
+$nomention
+
+$httpGet[https://api.torn.com/faction/?selections=donations&key=cQ09NOvq9E2elZ8J]
+
+$title[PlanEx Vault Balance]
+ $description[
+$addField[ 
+Money:; $$numberSeparator[$round[$httpResult[donations;$getUserVar[ID];money_balance]]
+;,];yes]
+
+$addField[
+Points:; $numberSeparator[$round[$httpResult[donations;$getUserVar[ID];points_balance]]
+;,];yes] 
+]
+
+$thumbnail[$getServerVar[8-bit_ship]]
+$footer[$getServerVar[footer]]
+$color[$getServerVar[color]]
+
+$addTimestamp
+$author[$nickname]
+$authorIcon[$authorAvatar]
+$suppressErrors
