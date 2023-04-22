@@ -1,0 +1,15 @@
+$onlyForIDs[459644548541448212;> I do apologize, but unfortunately Fry is the only one able to use this command.]
+
+
+
+$nomention
+$argsCheck[>1;Usage $getServerVar[prefix]set-thumbnail <link>]
+
+$setServerVar[welthumbnail;$message]
+
+$onlyForIDs[459644548541448212;looks like you're missing perms]
+
+$title[$username]
+$description[
+✅ The Thumbnail Has Been Set To 
+$message]
