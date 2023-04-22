@@ -1,0 +1,50 @@
+$nomention
+
+$c[Customize the code according to your bot commands]
+
+$title[Help Menu]
+$description[Looking for Help?
+
+Depending on what role you have, will determine what button options you will have available.]
+
+
+$c[Owner Role]
+$if[$hasRole[$authorID;1087635125036138517]==true]
+$addButton[no;Owner;Owner;danger;no;]
+$endif
+
+$c[Leader Role]
+$if[$hasRole[$authorID;1087635125036138517]==true]
+$addButton[no;Leader;Leadership;success;no;]
+$endif
+
+$c[Co-Leader Role]
+$if[$hasRole[$authorID;1087635981127127040]==true]
+$addButton[no;Leader;Leadership;success;no;]
+$endif
+
+$c[Head of the Robot Mafia Role]
+$if[$hasRole[$authorID;1087631540680413208]==true]
+$addButton[yes;Management; Management;secondary;no;]
+$endif
+
+$c[Management Role]
+$if[$hasRole[$authorID;1087631350871359590]==true]
+$addButton[yes;Management; Management;secondary;no;]
+$endif
+
+$c[Crew Role]
+$if[$hasRole[$authorID;1087631101956198401]==true]
+$addButton[no;Crew;Crew;primary;no;]
+$endif
+
+
+
+
+
+$thumbnail[$getServerVar[8-bit_ship]]
+$footer[$getServerVar[footer]]
+$color[$getServerVar[color]]
+$addTimestamp
+$author[$nickname]
+$authorIcon[$authorAvatar]

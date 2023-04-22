@@ -1,0 +1,18 @@
+$nomention
+$httpGet[https://api.torn.com/user/$getUserVar[ID]?selections=bars&key=$getUserVar[ApiKey;$authorID]]
+
+$title[Energy Conversion]
+$addField[Current Energy;$round[$httpResult[energy;current];0];yes]
+
+$if[$round[$httpResult[energy;current];0]<25]
+$addField[Available Hits;0]
+$else
+$addField[Available Hits;$round[$calculate[$httpResult[energy;current]/25];0];yes]
+$endif
+
+$thumbnail[$getServerVar[8-bit_ship]]
+$footer[$getServerVar[footer]]
+$color[$getServerVar[color]]
+
+$botTyping
+$deleteIn[45]

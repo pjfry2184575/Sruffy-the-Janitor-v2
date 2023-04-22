@@ -1,19 +1,25 @@
 $dm
+
 $nomention
-$httpGet[https://api.torn.com/faction/?selections=donations&key=CE7hD91TWv3xtVjc]
 
-$title[Account Balance]
- $color[ef7213]
+$httpGet[https://api.torn.com/faction/?selections=donations&key=cQ09NOvq9E2elZ8J]
+
+$title[PlanEx Vault Balance]
  $description[
-Money: $$numberSeparator[$round[$httpResult[donations;$getUserVar[ID];money_balance]]
-;,]
-Points: $numberSeparator[$round[$httpResult[donations;$getUserVar[ID];points_balance]]
-;,]]
+$addField[ 
+Money:; $$numberSeparator[$round[$httpResult[donations;$getUserVar[ID];money_balance]]
+;,];yes]
 
-$thumbnail[https://gyazo.com/113a950b17a2a12747bc27dee0f5c8f5.png]
-$footer[provided by PlanEx]
-$color[ef7213]
-$deletecommand
+$addField[
+Points:; $numberSeparator[$round[$httpResult[donations;$getUserVar[ID];points_balance]]
+;,];yes] 
+]
+
+$thumbnail[$getServerVar[8-bit_ship]]
+$footer[$getServerVar[footer]]
+$color[$getServerVar[color]]
+
 $addTimestamp
-$author[$username#$discriminator[]]
+$author[$nickname]
 $authorIcon[$authorAvatar]
+$suppressErrors
