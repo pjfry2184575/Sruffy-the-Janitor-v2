@@ -1,7 +1,0 @@
-$onlyAdmin[> I do apologize, but unfortunately Fry is the only one able to use this command.]
-
-$setUserVar[level;0]
-
-$setUserVar[req;250]
-
-$setUserVar[talk;0]

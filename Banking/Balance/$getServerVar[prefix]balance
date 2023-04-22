@@ -1,0 +1,19 @@
+$dm
+$nomention
+$httpGet[https://api.torn.com/faction/?selections=donations&key=CE7hD91TWv3xtVjc]
+
+$title[Account Balance]
+ $color[ef7213]
+ $description[
+Money: $$numberSeparator[$round[$httpResult[donations;$getUserVar[ID];money_balance]]
+;,]
+Points: $numberSeparator[$round[$httpResult[donations;$getUserVar[ID];points_balance]]
+;,]]
+
+$thumbnail[https://gyazo.com/113a950b17a2a12747bc27dee0f5c8f5.png]
+$footer[provided by PlanEx]
+$color[ef7213]
+$deletecommand
+$addTimestamp
+$author[$username#$discriminator[]]
+$authorIcon[$authorAvatar]
